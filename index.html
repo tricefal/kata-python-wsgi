@@ -1,0 +1,32 @@
+<html>
+
+	<head lang="fr">
+		<meta charset="utf-8">
+		<meta name='viewport' content="width=device-width, initial-scale=1.0" />
+		<link rel='stylesheet' href='./style.css' type="text/css">
+		<title>test</title>
+	</head>
+
+	<body>
+		<form method="POST" action="">
+			<p>
+				Age: <input type="text" name="age" value="%(age)s">
+			</p>
+			<p>
+				<label for="hobbies">
+					Hobbies:
+				</label>
+				<input name="hobbies" type="checkbox" value="software" %(checked-software)s> Software
+				<input name="hobbies" type="checkbox" value="tunning" %(checked-tunning)s> Auto Tunning
+			</p>
+			<p>
+				<input type="submit" value="Submit">
+			</p>
+		</form>
+		<p>
+			Age: %(age)s<br>
+			Hobbies: %(hobbies)s
+		</p>
+	</body>
+
+</html>
